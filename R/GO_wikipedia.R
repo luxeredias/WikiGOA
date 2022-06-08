@@ -100,7 +100,7 @@ p <- fgsea_all %>%
   scale_fill_gradient2(low = "blue",mid = "white",high = "red3")+
   theme_minimal()+
   facet_wrap(facets = ~db,scales = "free")
-pdf(file = "figures/go_wikipedia_fgsea.pdf",width = 9,height = 3)
+pdf(file = "figures/go_wikipedia_fgsea_COVID.pdf",width = 9,height = 3)
 print(p)
 dev.off()
 
@@ -142,6 +142,6 @@ p <- fgsea_all %>%
   scale_fill_gradient2(low = "blue",mid = "white",high = "red3")+
   theme_minimal()+
   facet_wrap(facets = ~db,scales = "free")
-pdf(file = "figures/go_wikipedia_fgsea.pdf",width = 9,height = 3)
+pdf(file = "figures/go_wikipedia_fgsea_SCZ.pdf",width = 9,height = 3)
 print(p)
 dev.off()
