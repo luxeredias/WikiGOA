@@ -15,6 +15,6 @@ for i in df.groupby("itemLabel"):
   sitelink = i[1]["sitelink"].values[0]
   genes = i[1]["gene_symbol"].values
   full_gmt += f"""{itemLabel}	{sitelink}	{"	".join(genes)}
-  """
+"""
 
 HERE.parent.joinpath("datasets/wikigoa_gene_symbol.gmt").write_text(full_gmt)
